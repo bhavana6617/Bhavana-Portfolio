@@ -1,15 +1,11 @@
 
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+
 import "animate.css";
 import TrackVisibility from "react-on-screen";
 
 export const Banner = () => {
-  const handleConnect = () => {
-    document.getElementById("contact")?.scrollIntoView({
-      behavior: "smooth",
-    });
-  };
+ 
 
   return (
     <section className="banner" id="home">
