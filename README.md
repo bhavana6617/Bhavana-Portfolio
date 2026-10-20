@@ -1,6 +1,6 @@
 # Bhavana Rasamsetti | Personal Portfolio
 
-🌐 **Live Portfolio:** [View My Portfolio](YOUR_VERCEL_URL)
+🌐 **Live Portfolio:** [View My Portfolio](https://bhavana-portfolio-swart.vercel.app/)
 
 Welcome to my personal portfolio! I'm Bhavana Rasamsetti, an AI-focused full-stack engineer and M.Sc. Web Engineering student at TU Chemnitz, Germany.
 
