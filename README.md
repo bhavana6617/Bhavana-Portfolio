@@ -1,36 +1,86 @@
-# Personal Portfolio Website in React
+# Bhavana Rasamsetti | Personal Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+🌐 **Live Portfolio:** [View My Portfolio](YOUR_VERCEL_URL)
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="https://user-images.githubusercontent.com/50160672/174933373-1ba6cadf-1c9a-48c3-aa58-984d0bd62d82.png">
+Welcome to my personal portfolio! I'm Bhavana Rasamsetti, an AI-focused full-stack engineer and M.Sc. Web Engineering student at TU Chemnitz, Germany.
 
-Built using:
+This portfolio showcases my technical skills, professional experience, and projects in web development, Generative AI, LLM applications, Retrieval-Augmented Generation (RAG), data analytics, and workflow automation.
 
-- Front-end library: React
-- CSS framework: React-bootstrap
-- CSS animations library: Animate.css
+## 🚀 Tech Stack
 
-In the /personal-portfolio, you can run:
+- **Frontend:** React, JavaScript, React-Bootstrap, CSS
+- **AI & Generative AI:** LLMs, RAG, OpenAI API, LangChain
+- **Backend:** Node.js, Express.js, Python, FastAPI
+- **Databases & Data:** SQL, MongoDB, Pinecone, Power BI
+- **Tools & Deployment:** Git, GitHub, Docker, Vercel, Google Cloud Run
 
-### `npm start`
+## 🌟 Featured Projects
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### LexAI — AI-Powered Legal Contract Risk Analyzer
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+An AI-powered application that analyzes legal contracts, identifies potential risks, and answers contract-specific questions using evidence-backed responses.
 
-### `npm test`
+- **Technologies:** Python, FastAPI, RAG, OpenAI API, Pinecone
+- **Live Demo:** [Try LexAI](https://legal-contract-risk-analyzer-blue.vercel.app)
+- **GitHub:** [View Source Code](https://github.com/bhavanarasamsetti/legal-contract-risk-analyzer)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### PayFlow Support Intelligence
 
-### `npm run build`
+An AI-powered customer support automation platform that classifies tickets, detects sentiment and priority, and automates workflows.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Technologies:** React, TypeScript, Node.js, Express.js, OpenAI API, n8n
+- **Live Demo:** [Try PayFlow](https://payflow-support-intelligence.vercel.app)
+- **GitHub:** [View Source Code](https://github.com/bhavanarasamsetti/payflow-support-intelligence)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Other Projects
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Explore my GitHub repositories for additional projects in financial analytics, customer analytics, web development, and interactive applications.
+
+## 💼 Professional Experience
+
+**Infosys — System Associate**
+
+Worked for over two years on enterprise data analytics, reporting, SQL, and data-driven business processes.
+
+## 🎓 Education
+
+**M.Sc. Web Engineering**  
+TU Chemnitz, Germany
+
+## 💻 Run Locally
+
+Clone this repository:
+
+```bash
+git clone https://github.com/bhavana6617/Bhavana-Portfolio.git
+cd Bhavana-Portfolio
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Start the development server:
+
+```bash
+npm start
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+Create a production build:
+
+```bash
+npm run build
+```
+
+## 📬 Connect With Me
+
+- **GitHub:** [bhavanarasamsetti](https://github.com/bhavanarasamsetti)
+- **LinkedIn:** [Bhavana Rasamsetti](https://www.linkedin.com/in/bhavana-rasamsetti-a89191349/)
+
+---
+
+Built with React and React-Bootstrap by **Bhavana Rasamsetti**.
