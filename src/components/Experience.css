@@ -1,0 +1,292 @@
+
+.experience {
+  padding: 90px 0;
+  color: #fff;
+  background: transparent;
+  overflow: hidden;
+}
+
+.experience-heading {
+  text-align: left;
+  margin-bottom: 65px;
+}
+
+.section-subtitle {
+  color: #b49aff;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  margin-bottom: 12px;
+}
+
+.experience-heading h2 {
+  font-size: clamp(36px, 5vw, 58px);
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.experience-intro {
+  color: #c0bdc9;
+  font-size: 17px;
+}
+
+/* Central timeline */
+.experience-timeline {
+  position: relative;
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.experience-timeline::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  bottom: 15px;
+  left: 50%;
+  width: 3px;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    to bottom,
+    rgba(180, 154, 255, 0.25),
+    #b49aff,
+    rgba(180, 154, 255, 0.25)
+  );
+  box-shadow: 0 0 15px rgba(169, 112, 255, 0.25);
+}
+
+.timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 90px minmax(0, 1fr);
+  align-items: start;
+  margin-bottom: 65px;
+}
+
+.timeline-item:last-child {
+  margin-bottom: 0;
+}
+
+
+/* Circular company logo */
+.timeline-logo {
+  grid-column: 2;
+  grid-row: 1;
+  justify-self: center;
+  width: 84px;
+  height: 84px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border: 4px solid #b49aff;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 0 20px rgba(169, 112, 255, 0.3);
+  z-index: 2;
+  overflow: hidden;
+}
+
+.timeline-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.timeline-logo.logo-fallback::after {
+  content: attr(data-initial);
+  color: #6b35b5;
+  font-size: 28px;
+  font-weight: 800;
+}
+
+
+
+/* Alternating cards */
+.experience-card {
+  position: relative;
+  min-width: 0;
+  padding: 28px;
+  border: 1px solid rgba(166, 124, 255, 0.3);
+  border-radius: 4px 18px 18px 18px;
+  background: rgba(30, 24, 53, 0.78);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+  transition: border-color 0.25s ease, transform 0.25s ease;
+}
+
+.experience-card:hover {
+  border-color: rgba(166, 124, 255, 0.75);
+  transform: translateY(-3px);
+}
+
+.timeline-left .experience-card {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.timeline-right .experience-card {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* Small arrow toward the timeline */
+.timeline-left .experience-card::after,
+.timeline-right .experience-card::after {
+  content: "";
+  position: absolute;
+  top: 28px;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+}
+
+.timeline-left .experience-card::after {
+  right: -10px;
+  border-left: 10px solid rgba(30, 24, 53, 0.95);
+}
+
+.timeline-right .experience-card::after {
+  left: -10px;
+  border-right: 10px solid rgba(30, 24, 53, 0.95);
+}
+
+.experience-period {
+  color: #b49aff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.experience-content h3,
+.experience-card h3 {
+  font-size: 24px;
+  margin: 12px 0 5px;
+  font-weight: 750;
+  color: #fff;
+}
+
+.experience-card h4 {
+  color: #d0c0ff;
+  font-size: 17px;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.experience-location {
+  color: #aaa4ba;
+  font-size: 13px;
+  margin-bottom: 20px;
+}
+
+.experience-list {
+  padding-left: 20px;
+  margin: 18px 0 22px;
+}
+
+.experience-list li {
+  color: #c6c3ce;
+  font-size: 14px;
+  line-height: 1.8;
+  padding-left: 4px;
+  margin-bottom: 9px;
+}
+
+.experience-list strong {
+  color: #e4d9ff;
+  font-weight: 650;
+}
+
+.experience-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 9px;
+  margin-top: 20px;
+}
+
+.experience-tags span {
+  color: #e0d5ff;
+  border: 1px solid rgba(166, 124, 255, 0.4);
+  background: rgba(100, 65, 200, 0.15);
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Mobile: timeline on the left, cards on the right */
+@media (max-width: 767px) {
+  .experience {
+    padding: 65px 0;
+  }
+
+  .experience-heading {
+    margin-bottom: 40px;
+  }
+
+  .experience-heading h2 {
+    font-size: 36px;
+  }
+
+  .experience-timeline {
+    padding-left: 0;
+  }
+
+  .experience-timeline::before {
+    left: 29px;
+  }
+
+  .timeline-item {
+    grid-template-columns: 60px minmax(0, 1fr);
+    gap: 12px;
+    margin-bottom: 35px;
+  }
+
+  
+.timeline-logo {
+  grid-column: 1;
+  grid-row: 1;
+  width: 58px;
+  height: 58px;
+  padding: 3px;
+  border-width: 3px;
+}
+
+
+  .timeline-left .experience-card,
+  .timeline-right .experience-card {
+    grid-column: 2;
+    grid-row: 1;
+    padding: 22px 18px;
+  }
+
+  .timeline-left .experience-card::after,
+  .timeline-right .experience-card::after {
+    left: -9px;
+    right: auto;
+    border-top-width: 8px;
+    border-bottom-width: 8px;
+    border-right: 8px solid rgba(30, 24, 53, 0.95);
+    border-left: 0;
+  }
+
+  .experience-card h3 {
+    font-size: 21px;
+  }
+
+  .experience-card h4 {
+    font-size: 16px;
+  }
+
+  .experience-list li {
+    font-size: 13px;
+  }
+
+  .experience-tags {
+    gap: 7px;
+  }
+
+  .experience-tags span {
+    font-size: 11px;
+    padding: 6px 9px;
+  }
+}
